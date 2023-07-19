@@ -1,0 +1,25 @@
+n=int(input("No of matchsticks:"))
+print("A player can take 1-4 sticks")
+x=input("Enter the name of the player 1:")
+y=input("Enter the name of the player 2:")
+while(n!=0):
+    u=int(input(f"Enter the number of sticks {x} takes:"))
+    if(u>4):
+        print("You should select the number 1 to 4 only")
+        u=int(input(f"Enter the number of sticks {x} takes:"))
+    n=n-u
+    if(n<=0):
+        print(f"{x} is the winner")
+        break
+    else:
+        pass
+    v=int(input(f"Enter the number of sticks {y} takes:"))
+    if(v>4):
+        print("You should select the number 1 to 4 only")
+        v=int(input(f"Enter the number of sticks {y} takes:"))
+    n=n-v
+    if(n<=0):
+        print(f"{y} is the winner")
+        break
+    else:
+        pass
